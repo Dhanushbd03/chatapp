@@ -1,8 +1,8 @@
-import { useState } from "react";
-import { IoSearchSharp } from "react-icons/io5";
-import useConversation from "../../zustand/useConversation";
+import { useState }        from "react";
+import { IoSearchSharp }   from "react-icons/io5";
+import useConversation     from "../../zustand/useConversation";
 import useGetConversations from "../../hooks/useGetConversations";
-import toast from "react-hot-toast";
+import toast               from "react-hot-toast";
 
 const SearchInput = () => {
 	const [search, setSearch] = useState("");
@@ -28,7 +28,7 @@ const SearchInput = () => {
 			<input
 				type='text'
 				placeholder='Search…'
-				className='input input-bordered rounded-full'
+				className='input input-bordered rounded-full bg-sky-500 placeholder:text-white'
 				value={search}
 				onChange={(e) => setSearch(e.target.value)}
 			/>
@@ -36,6 +36,7 @@ const SearchInput = () => {
 				<IoSearchSharp className='w-6 h-6 outline-none' />
 			</button>
 		</form>
+
 	);
 };
 export default SearchInput;

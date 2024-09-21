@@ -1,8 +1,8 @@
-import { useEffect } from "react";
-import useConversation from "../../zustand/useConversation";
-import MessageInput from "./MessageInput";
-import Messages from "./Messages";
-import { TiMessages } from "react-icons/ti";
+import { useEffect }      from "react";
+import useConversation    from "../../zustand/useConversation";
+import MessageInput       from "./MessageInput";
+import Messages           from "./Messages";
+import { TiMessages }     from "react-icons/ti";
 import { useAuthContext } from "../../context/AuthContext";
 
 const MessageContainer = () => {
@@ -14,7 +14,7 @@ const MessageContainer = () => {
 	}, [setSelectedConversation]);
 
 	return (
-		<div className='md:min-w-[450px] flex flex-col'>
+		<div className='w-full md:min-w-[450px] md:flex flex-col h-[calc(100vh-80px)]' id="messageContainer">
 			{!selectedConversation ? (
 				<NoChatSelected />
 			) : (
@@ -49,6 +49,7 @@ const NoChatSelected = () => {
 // STARTER CODE SNIPPET
 // import MessageInput from "./MessageInput";
 // import Messages from "./Messages";
+// import MessageContainer   from './MessageContainer';
 
 // const MessageContainer = () => {
 // 	return (
