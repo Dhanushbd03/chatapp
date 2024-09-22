@@ -6,7 +6,7 @@ const Home = () => {
 	return (
 		<>
 			<Navbar />
-			<div className="flex h-[calc(100vh-80px)] w-full mt-20 rounded-lg overflow-hidden bg-gray-900 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0">
+			<div className="flex h-[calc(100vh-100px)] mt-10 w-full  rounded-lg  bg-gray-900 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0">
 				<Sidebar />
 				<MessageContainer />
 			</div>
